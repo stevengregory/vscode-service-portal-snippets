@@ -1,0 +1,28 @@
+{
+    "name": "servicenow-service-portal-snippets",
+    "displayName": "ServiceNow Service Portal Snippets",
+    "description": "A collection of handy ServiceNow Service Portal snippets",
+    "version": "0.0.1",
+    "publisher": "stevengregory",
+    "engines": {
+        "vscode": "^1.26.0"
+    },
+    "categories": [
+        "ServiceNow",
+        "Service Portal",
+        "Snippets"
+    ],
+    "main": "./extension",
+    "contributes": {},
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "eslint": "^4.11.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
+}
