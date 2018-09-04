@@ -1,7 +1,9 @@
-# Change Log
-All notable changes to the "servicenow-service-portal-snippets" extension will be documented in this file.
+# Service Portal Snippets Changelog
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+<a name="1.0.0"></a>
 
-## [Unreleased]
-- Initial release
+## 1.0.0 (2018-09-10)
+
+- Added JavaScript snippets for
+  - snippet 1
+  - snippet 2
