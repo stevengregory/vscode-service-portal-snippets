@@ -1,0 +1,42 @@
+{
+  "Service Portal: Embedded widget": {
+    "prefix": "sp-embed-widget",
+    "body": ["<widget id=\"${1:widget-cool-clock}\"></widget>"],
+    "description": "Embedded widget: Use the <widget></widget> element to embed a widget in an HTML template. Pass in the ID of the widget you are trying to embed as a parameter"
+  },
+  "Service Portal: AngularJS ngClass with attribute": {
+    "prefix": "sp-ng-class-attribute",
+    "body": ["<p ng-class=\"${1:expression}\">Example</p>"],
+    "description": "AngularJS ngClass directive allows you to dynamically set CSS classes on an HTML element by data binding an expression that represents all classes to be added"
+  },
+  "Service Portal: AngularJS ngClass with CSS class": {
+    "prefix": "sp-ng-class-css",
+    "body": ["<p ng-class=\"{'${1:class}': ${2:expression}}\">Example</p>"],
+    "description": "AngularJS ngClass directive allows you to dynamically set CSS classes on an HTML element by data binding an expression that represents all classes to be added"
+  },
+  "Service Portal: AngularJS ngIf": {
+    "prefix": "sp-ng-if",
+    "body": ["<div ng-if=\"${1:expression}\"></div>"],
+    "description": "AngularJS ngIf directive removes or recreates a portion of the DOM tree based on an {expression}"
+  },
+  "Service Portal: AngularJS ngInclude": {
+    "prefix": "sp-ng-include",
+    "body": ["<div ng-include=\"'${1:template}'\"></div>"],
+    "description": "AngularJS ngInclude directive that fetches, compiles and includes an external HTML fragment"
+  },
+  "Service Portal: AngularJS ngRepeat": {
+    "prefix": "sp-ng-repeat",
+    "body": ["<div ng-repeat=\"item in c.${1:items}\"></div>"],
+    "description": "AngularJS ngRepeat directive to iterate over a collection"
+  },
+  "Service Portal: AngularJS ngRepeat with orderBy": {
+    "prefix": "sp-ng-repeat-orderBy",
+    "body": ["<div ng-repeat=\"item in c.${1:items} | orderBy: '${2:order}'\"></div>"],
+    "description": "AngularJS ngRepeat directive to iterate over a collection"
+  },
+  "Service Portal: AngularJS ngRepeat with trackBy": {
+    "prefix": "sp-ng-repeat-trackBy",
+    "body": ["<div ng-repeat=\"item in c.${1:items} track by ${2:item.id}\"></div>"],
+    "description": "AngularJS ngRepeat directive to iterate over a collection"
+  }
+}

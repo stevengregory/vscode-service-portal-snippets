@@ -10,24 +10,31 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 
 ### HTML Snippets
 
-| Snippet              | Purpose                                    |
-| -------------------- | ------------------------------------------ |
-| ``                   |                                            |
+| Snippet                 | Purpose                                    |
+| ----------------------- | ------------------------------------------ |
+| `sp-embed-widget`       | Embed a widget in the HTML template        |
+| `sp-ng-class-attribute` | `ng-class` with attribute                  |
+| `sp-ng-class-css`       | `ng-class` with CSS class                  |
+| `sp-ng-if`              | `ng-if`                                    |
+| `sp-ng-include`         | `ng-include`                               |
+| `sp-ng-repeat`          | `ng-repeat`                                |
+| `sp-ng-repeat-orderBy`  | `ng-repeat` with orderBy                   |
+| `sp-ng-repeat-trackBy`  | `ng-repeat` with trackBy                   |
 
 ### CSS Snippets
 
-| Snippet              | Purpose                                    |
-| -------------------- | ------------------------------------------ |
-| ``                   |                                            |
+| Snippet                 | Purpose                                    |
+| ----------------------- | ------------------------------------------ |
+| ``                      |                                            |
 
 ### Client Snippets
 
-| Snippet              | Purpose                                    |
-| -------------------- | ------------------------------------------ |
-| ``                   |                                            |
+| Snippet                 | Purpose                                    |
+| ----------------------- | ------------------------------------------ |
+| ``                      |                                            |
 
 ### Server Snippets
 
-| Snippet              | Purpose                                    |
-| -------------------- | ------------------------------------------ |
-| ``                   |                                            |
+| Snippet                 | Purpose                                    |
+| ----------------------- | ------------------------------------------ |
+| ``                      |                                            |
