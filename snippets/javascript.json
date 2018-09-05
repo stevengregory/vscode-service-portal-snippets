@@ -1,0 +1,50 @@
+{
+  "Service Portal: Controller": {
+    "prefix": "sp-controller",
+    "body": [
+      "function ${1:Name}Controller() {",
+      "\tvar c = this;",
+      "",
+      "\tc.$$onInit = function() {};",
+      "}"
+    ],
+    "description": "Service Portal client controller script"
+  },
+  "Service Portal: Embedded widget": {
+    "prefix": "sp-embed-widget",
+    "body": [
+      "spUtil.get(\"${1:example-widget}\").then(function(response) {",
+      "\t${2:c.exampleWidget} = response;",
+      "});"
+    ],
+    "description": "Embedded widget: Use spUtil.get() to get a widget model in the client script"
+  },
+  "Service Portal: Embedded widget with options": {
+    "prefix": "sp-embed-widget-options",
+    "body": [
+      "spUtil.get(\"${1:example-widget}\", {${2:sys_id}: \"${3:example_sys_id}\"}).then(function(response) {",
+      "\t${4:c.exampleWidget} = response;",
+      "});"
+    ],
+    "description": "Embedded widget: Use spUtil.get() to get a widget model in the client script"
+  },
+  "Service Portal: $onInit": {
+    "prefix": "sp-onInit",
+    "body": [
+      "c.$$onInit = function() {",
+      "\t$1",
+      "};"
+    ],
+    "description": "$onInit: Called on each controller after all the controllers on an element have been constructed and had their bindings initialized"
+  },
+  "Service Portal: Record Watch": {
+    "prefix": "sp-record-watcher",
+    "body": [
+      "spUtil.recordWatch($$scope, \"${1:incident}\", \"${2:active=true}\", function(name, data) {",
+      "\t$3console.log(name);",
+      "\t$4console.log(data);",
+      "});"
+    ],
+    "description": "Record Watch: A tool that allows a widget developer to respond to table updates in real-time"
+  }
+}

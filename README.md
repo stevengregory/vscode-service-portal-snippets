@@ -10,31 +10,35 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 
 ### HTML Snippets
 
-| Snippet                 | Purpose                                    |
-| ----------------------- | ------------------------------------------ |
-| `sp-embed-widget`       | Embed a widget in the HTML template        |
-| `sp-ng-class-attribute` | `ng-class` with attribute                  |
-| `sp-ng-class-css`       | `ng-class` with CSS class                  |
-| `sp-ng-if`              | `ng-if`                                    |
-| `sp-ng-include`         | `ng-include`                               |
-| `sp-ng-repeat`          | `ng-repeat`                                |
-| `sp-ng-repeat-orderBy`  | `ng-repeat` with orderBy                   |
-| `sp-ng-repeat-trackBy`  | `ng-repeat` with trackBy                   |
+| Snippet                   | Purpose                                    |
+| ------------------------- | ------------------------------------------ |
+| `sp-embed-widget`         | Embed a widget in the HTML template        |
+| `sp-ng-class-attribute`   | `ng-class` with attribute                  |
+| `sp-ng-class-css`         | `ng-class` with CSS class                  |
+| `sp-ng-if`                | `ng-if`                                    |
+| `sp-ng-include`           | `ng-include`                               |
+| `sp-ng-repeat`            | `ng-repeat`                                |
+| `sp-ng-repeat-orderBy`    | `ng-repeat` with orderBy                   |
+| `sp-ng-repeat-trackBy`    | `ng-repeat` with trackBy                   |
 
 ### CSS Snippets
 
-| Snippet                 | Purpose                                    |
-| ----------------------- | ------------------------------------------ |
-| ``                      |                                            |
+| Snippet                   | Purpose                                    |
+| ------------------------- | ------------------------------------------ |
+| ``                        |                                            |
 
 ### Client Snippets
 
-| Snippet                 | Purpose                                    |
-| ----------------------- | ------------------------------------------ |
-| ``                      |                                            |
+| Snippet                   | Purpose                                    |
+| ------------------------- | ------------------------------------------ |
+| `sp-controller`           | Creates a client controller                |
+| `sp-embed-widget`         | Embed a widget in the client script        |
+| `sp-embed-widget-options` | Embed a widget with options                |
+| `sp-onInit`               | `$onInit` lifecycle hook                   |
+| `sp-record-watcher`       | Tool to capture real-time table updates    |
 
 ### Server Snippets
 
-| Snippet                 | Purpose                                    |
-| ----------------------- | ------------------------------------------ |
-| ``                      |                                            |
+| Snippet                   | Purpose                                    |
+| ------------------------- | ------------------------------------------ |
+| ``                        |                                            |
