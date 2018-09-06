@@ -12,7 +12,8 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 
 | Snippet                   | Purpose                                    |
 | ------------------------- | ------------------------------------------ |
-| `sp-embed-widget`         | Embed a widget in the HTML template        |
+| `sp-embed-widget`         | Embed a widget using `<widget>`            |
+| `sp-embed-widget-spUtil`  | Embed a widget using `<sp-widget>`         |
 | `sp-ng-class-attribute`   | `ng-class` with attribute                  |
 | `sp-ng-class-css`         | `ng-class` with CSS class                  |
 | `sp-ng-if`                | `ng-if`                                    |
