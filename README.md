@@ -31,10 +31,13 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 
 | Snippet                   | Purpose                                    |
 | ------------------------- | ------------------------------------------ |
+| `sp-broadcast-event`      | `$broadcast`                               |
 | `sp-controller`           | Creates a client controller                |
 | `sp-embed-widget`         | Embed a widget in the client script        |
 | `sp-embed-widget-options` | Embed a widget with options                |
-| `sp-onInit`               | `$onInit` lifecycle hook                   |
+| `sp-emit-event`           | `$emit`                                    |
+| `sp-on-event`             | `$on`                                      |
+| `sp-onInit`               | `$onInit`                                  |
 | `sp-record-watcher`       | Tool to capture real-time table updates    |
 
 ### Server Snippets
