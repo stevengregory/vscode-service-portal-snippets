@@ -1,7 +1,7 @@
 {
   "Service Portal: $broadcast": {
     "prefix": "sp-broadcast-event",
-    "body": ["$$rootScope.$$broadcast('${1:event-name}');"],
+    "body": ["$$rootScope.$$broadcast('${1:eventName}', ${2:args});"],
     "description": "$broadcast: Dispatches an event name downwards to all child scopes (and their children)"
   },
   "Service Portal: Controller": {
@@ -35,14 +35,14 @@
   },
   "Service Portal: $emit": {
     "prefix": "sp-emit-event",
-    "body": ["$$rootScope.$$emit('${1:event-name}');"],
+    "body": ["$$rootScope.$$emit('${1:eventName}', ${2:args});"],
     "description": "$emit: Dispatches an event name upwards through the scope hierarchy"
   },
   "Service Portal: $on": {
     "prefix": "sp-on-event",
     "body": [
-      "$$scope.$on('${1:event-name}', function(event, args) {",
-      "\t$2",
+      "$$scope.$$on('${1:eventName}', function(event, args) {",
+      "\t$2console.log(args);",
       "});"
     ],
     "description": "$on: Listens on events of a given type"
