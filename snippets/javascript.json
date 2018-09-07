@@ -4,6 +4,25 @@
     "body": ["$$rootScope.$$broadcast('${1:eventName}', ${2:args});"],
     "description": "$broadcast: Dispatches an event name downwards to all child scopes (and their children)"
   },
+  "Service Portal: AngularJS Component": {
+    "prefix": "sp-component",
+    "body": [
+      "(function() {",
+      "\t'use strict';",
+      "",
+      "\tvar componentName = {",
+      "\t\ttemplate: [",
+      "\t\t\t''",
+      "\t\t].join('')",
+      "\t};",
+      "",
+      "\tangular",
+      "\t\t.module('moduleName')",
+      "\t\t.component('componentName', componentName);",
+      "})();"
+    ],
+    "description": "angular.component: is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure"
+  },
   "Service Portal: Controller": {
     "prefix": "sp-controller",
     "body": [
@@ -38,6 +57,17 @@
     "body": ["$$rootScope.$$emit('${1:eventName}', ${2:args});"],
     "description": "$emit: Dispatches an event name upwards through the scope hierarchy"
   },
+  "Service Portal: AngularJS Module": {
+    "prefix": "sp-module",
+    "body": [
+      "(function() {",
+      "\t'use strict';",
+      "",
+      "\tangular.module('${1:moduleName}', []);",
+      "})();"
+    ],
+    "description": "angular.module: is a global place for creating, registering and retrieving AngularJS modules"
+  },
   "Service Portal: $on": {
     "prefix": "sp-on-event",
     "body": [
@@ -65,5 +95,27 @@
       "});"
     ],
     "description": "Record Watch: A tool that allows a widget developer to respond to table updates in real-time"
+  },
+  "Service Portal: AngularJS Service": {
+    "prefix": "sp-service",
+    "body": [
+      "(function() {",
+      "\t'use strict';",
+      "",
+      "\tfunction ${1:serviceName}() {",
+      "\t\tvar service = {",
+      "\t\t\t${2:getSomething}: ${3:getSomething}",
+      "\t\t};",
+      "\t\treturn service;",
+      "",
+      "\t\tfunction ${4:getSomething}() {}",
+      "\t}",
+      "",
+      "\tangular",
+      "\t\t.module('${5:moduleName}')",
+      "\t\t.service('${6:serviceName}', ${7:serviceName});",
+      "})();"
+    ],
+    "description": "angular.service: is a constructor function which is invoked once at runtime and wired together using dependency injection (DI)"
   }
 }

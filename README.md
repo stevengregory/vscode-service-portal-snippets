@@ -46,3 +46,11 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | Snippet                   | Purpose                                    |
 | ------------------------- | ------------------------------------------ |
 | ``                        |                                            |
+
+### UI Script Snippets
+
+| Snippet                   | Purpose                                    |
+| ------------------------- | ------------------------------------------ |
+| `sp-component`            | Creates an AngularJS component             |
+| `sp-module`               | Creates an AngularJS module                |
+| `sp-service`              | Creates an AngularJS service               |
