@@ -1,8 +1,8 @@
 {
-  "Service Portal: $broadcast": {
+  "Service Portal: AngularJS $broadcast": {
     "prefix": "sp-broadcast-event",
     "body": ["$$rootScope.$$broadcast('${1:eventName}', ${2:args});"],
-    "description": "$broadcast: Dispatches an event name downwards to all child scopes (and their children)"
+    "description": "AngularJS $broadcast: Dispatches an event name downwards to all child scopes (and their children)"
   },
   "Service Portal: AngularJS Component": {
     "prefix": "sp-component",
@@ -21,9 +21,9 @@
       "\t\t.component('componentName', componentName);",
       "})();"
     ],
-    "description": "angular.component: is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure"
+    "description": "AngularJS Component: is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure"
   },
-  "Service Portal: Controller": {
+  "Service Portal: AngularJS Controller": {
     "prefix": "sp-controller",
     "body": [
       "function ${1:Name}Controller() {",
@@ -32,7 +32,7 @@
       "\tc.$$onInit = function() {$2};",
       "}"
     ],
-    "description": "Service Portal client controller script"
+    "description": "AngularJS Controller: is defined by a JavaScript constructor function that is used to augment the scope"
   },
   "Service Portal: Embedded widget": {
     "prefix": "sp-embed-widget",
@@ -52,10 +52,10 @@
     ],
     "description": "Embedded widget: Use spUtil.get() to get a widget model in the client script"
   },
-  "Service Portal: $emit": {
+  "Service Portal: AngularJS $emit": {
     "prefix": "sp-emit-event",
     "body": ["$$rootScope.$$emit('${1:eventName}', ${2:args});"],
-    "description": "$emit: Dispatches an event name upwards through the scope hierarchy"
+    "description": "AngularJS $emit: Dispatches an event name upwards through the scope hierarchy"
   },
   "Service Portal: AngularJS Module": {
     "prefix": "sp-module",
@@ -66,25 +66,25 @@
       "\tangular.module('${1:moduleName}', []);",
       "})();"
     ],
-    "description": "angular.module: is a global place for creating, registering and retrieving AngularJS modules"
+    "description": "AngularJS Module: is a global place for creating, registering and retrieving AngularJS modules"
   },
-  "Service Portal: $on": {
+  "Service Portal: AngularJS $on": {
     "prefix": "sp-on-event",
     "body": [
       "$$scope.$$on('${1:eventName}', function(event, args) {",
       "\t$2console.log(args);",
       "});"
     ],
-    "description": "$on: Listens on events of a given type"
+    "description": "AngularJS $on: Listens on events of a given type"
   },
-  "Service Portal: $onInit": {
+  "Service Portal: AngularJS $onInit": {
     "prefix": "sp-onInit",
     "body": [
       "c.$$onInit = function() {",
       "\t$1",
       "};"
     ],
-    "description": "$onInit: Called on each controller after all the controllers on an element have been constructed and had their bindings initialized"
+    "description": "AngularJS $onInit: Called on each controller after all the controllers on an element have been constructed and had their bindings initialized"
   },
   "Service Portal: Record Watch": {
     "prefix": "sp-record-watcher",
@@ -116,6 +116,6 @@
       "\t\t.service('${6:serviceName}', ${7:serviceName});",
       "})();"
     ],
-    "description": "angular.service: is a constructor function which is invoked once at runtime and wired together using dependency injection (DI)"
+    "description": "AngularJS Service: is a constructor function which is invoked once at runtime and wired together using dependency injection (DI)"
   }
 }
