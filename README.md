@@ -20,7 +20,8 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | `sp-ng-include`           | `ng-include`                               |
 | `sp-ng-repeat`            | `ng-repeat`                                |
 | `sp-ng-repeat-orderBy`    | `ng-repeat` with orderBy                   |
-| `sp-ng-repeat-trackBy`    | `ng-repeat` with trackBy                   |
+| `sp-ng-repeat-track-by`   | `ng-repeat` with track by                  |
+| `sp-ng-repeat-combo`      | `ng-repeat` with orderBy and track by      |
 
 ### CSS Snippets
 

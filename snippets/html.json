@@ -37,11 +37,16 @@
   "Service Portal: AngularJS ngRepeat with orderBy": {
     "prefix": "sp-ng-repeat-orderBy",
     "body": ["<div ng-repeat=\"item in c.${1:items} | orderBy: '${2:order}'\"></div>"],
-    "description": "AngularJS ngRepeat: is a directive which iterates over a collection"
+    "description": "AngularJS ngRepeat: is a directive which iterates over a collection; with an orderBy filter"
   },
-  "Service Portal: AngularJS ngRepeat with trackBy": {
-    "prefix": "sp-ng-repeat-trackBy",
+  "Service Portal: AngularJS ngRepeat with track by": {
+    "prefix": "sp-ng-repeat-track-by",
     "body": ["<div ng-repeat=\"item in c.${1:items} track by ${2:item.id}\"></div>"],
-    "description": "AngularJS ngRepeat: is a directive which iterates over a collection"
+    "description": "AngularJS ngRepeat: is a directive which iterates over a collection; with an added tracking expression"
+  },
+  "Service Portal: AngularJS ngRepeat combo with orderBy and track by": {
+    "prefix": "sp-ng-repeat-combo",
+    "body": ["<div ng-repeat=\"item in c.${1:items} | orderBy: '${2:order}' track by ${3:item.id}\"></div>"],
+    "description": "AngularJS ngRepeat: is a directive which iterates over a collection; with a combo orderBy filter and tracking expression"
   }
 }
