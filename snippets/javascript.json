@@ -1,11 +1,11 @@
 {
   "Service Portal: AngularJS $broadcast": {
-    "prefix": "sp-broadcast-event",
+    "prefix": "sp-ng-broadcast",
     "body": ["$$rootScope.$$broadcast('${1:eventName}', ${2:args});"],
     "description": "AngularJS $broadcast: Dispatches an event name downwards to all child scopes (and their children)"
   },
   "Service Portal: AngularJS Component": {
-    "prefix": "sp-component",
+    "prefix": "sp-ng-component",
     "body": [
       "(function() {",
       "\t'use strict';",
@@ -24,7 +24,7 @@
     "description": "AngularJS Component: is a special kind of directive that uses a simpler configuration which is suitable for a component-based application structure"
   },
   "Service Portal: AngularJS Controller": {
-    "prefix": "sp-controller",
+    "prefix": "sp-ng-controller",
     "body": [
       "function ${1:Name}Controller() {",
       "\tvar c = this;",
@@ -53,7 +53,7 @@
     "description": "Embedded widget: Use spUtil.get() to get a widget model in the client script"
   },
   "Service Portal: AngularJS $emit": {
-    "prefix": "sp-emit-event",
+    "prefix": "sp-ng-emit",
     "body": ["$$rootScope.$$emit('${1:eventName}', ${2:args});"],
     "description": "AngularJS $emit: Dispatches an event name upwards through the scope hierarchy"
   },
@@ -98,7 +98,7 @@
     "description": "isMemberOf(): Determines if the current user is a member of the specified group"
   },
   "Service Portal: AngularJS Module": {
-    "prefix": "sp-module",
+    "prefix": "sp-ng-module",
     "body": [
       "(function() {",
       "\t'use strict';",
@@ -109,7 +109,7 @@
     "description": "AngularJS Module: is a global place for creating, registering and retrieving AngularJS modules"
   },
   "Service Portal: AngularJS $on": {
-    "prefix": "sp-on-event",
+    "prefix": "sp-ng-on",
     "body": [
       "$$scope.$$on('${1:eventName}', function(event, args) {",
       "\t$2console.log(args);",
@@ -118,7 +118,7 @@
     "description": "AngularJS $on: Listens on events of a given type"
   },
   "Service Portal: AngularJS $onInit": {
-    "prefix": "sp-onInit",
+    "prefix": "sp-ng-onInit",
     "body": [
       "c.$$onInit = function() {",
       "\t$1",
@@ -137,7 +137,7 @@
     "description": "Record Watch: A tool that allows a widget developer to respond to table updates in real-time"
   },
   "Service Portal: AngularJS Service": {
-    "prefix": "sp-service",
+    "prefix": "sp-ng-service",
     "body": [
       "(function() {",
       "\t'use strict';",

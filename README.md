@@ -19,9 +19,9 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | `sp-ng-if`                | `ng-if`                                    |
 | `sp-ng-include`           | `ng-include`                               |
 | `sp-ng-repeat`            | `ng-repeat`                                |
+| `sp-ng-repeat-combo`      | `ng-repeat` with orderBy and track by      |
 | `sp-ng-repeat-orderBy`    | `ng-repeat` with orderBy                   |
 | `sp-ng-repeat-track-by`   | `ng-repeat` with track by                  |
-| `sp-ng-repeat-combo`      | `ng-repeat` with orderBy and track by      |
 
 ### CSS Snippets
 
@@ -33,13 +33,13 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 
 | Snippet                   | Purpose                                    |
 | ------------------------- | ------------------------------------------ |
-| `sp-broadcast-event`      | `$broadcast`                               |
-| `sp-controller`           | Creates a client controller                |
+| `sp-ng-broadcast`         | `$broadcast`                               |
+| `sp-ng-controller`        | Creates a client controller                |
 | `sp-embed-widget`         | Embed a widget in the client script        |
 | `sp-embed-widget-options` | Embed a widget with options                |
-| `sp-emit-event`           | `$emit`                                    |
-| `sp-on-event`             | `$on`                                      |
-| `sp-onInit`               | `$onInit`                                  |
+| `sp-ng-emit`              | `$emit`                                    |
+| `sp-ng-on`                | `$on`                                      |
+| `sp-ng-onInit`            | `$onInit`                                  |
 | `sp-record-watcher`       | Tool to capture real-time table updates    |
 
 ### Server Snippets
@@ -59,6 +59,6 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 
 | Snippet                   | Purpose                                    |
 | ------------------------- | ------------------------------------------ |
-| `sp-component`            | Creates an AngularJS component             |
-| `sp-module`               | Creates an AngularJS module                |
-| `sp-service`              | Creates an AngularJS service               |
+| `sp-ng-component`         | Creates an AngularJS component             |
+| `sp-ng-module`            | Creates an AngularJS module                |
+| `sp-ng-service`           | Creates an AngularJS service               |
