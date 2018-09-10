@@ -46,7 +46,14 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 
 | Snippet                   | Purpose                                    |
 | ------------------------- | ------------------------------------------ |
-| ``                        |                                            |
+| `sp-getDisplayName`       | Get the current user's display name        |
+| `sp-getEmail`             | Get the user's email address               |
+| `sp-getFirstName`         | Get the user's first name                  |
+| `sp-getID`                | Get the sys_id of the current user         |
+| `sp-getLastName`          | Get the user's last name                   |
+| `sp-getUserName`          | Get the user's username                    |
+| `sp-hasRole`              | Determines if a user has a specified role  |
+| `sp-isMemberOf`           | Checks if the user is a member of a group  |
 
 ### UI Script Snippets
 

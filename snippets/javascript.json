@@ -57,6 +57,46 @@
     "body": ["$$rootScope.$$emit('${1:eventName}', ${2:args});"],
     "description": "AngularJS $emit: Dispatches an event name upwards through the scope hierarchy"
   },
+  "Service Portal: GlideUser getDisplayName()": {
+    "prefix": "sp-getDisplayName",
+    "body": ["var ${1:currentUser} = gs.getUser().getDisplayName();"],
+    "description": "getDisplayName(): Returns the current user's display name"
+  },
+  "Service Portal: GlideUser getEmail()": {
+    "prefix": "sp-getEmail",
+    "body": ["var ${1:email} = gs.getUser().getEmail();"],
+    "description": "getEmail(): Returns the user's email address"
+  },
+  "Service Portal: GlideUser getFirstName()": {
+    "prefix": "sp-getFirstName",
+    "body": ["var ${1:firstName} = gs.getUser().getFirstName();"],
+    "description": "getFirstName(): Returns the user's first name"
+  },
+  "Service Portal: GlideUser getID()": {
+    "prefix": "sp-getID",
+    "body": ["var ${1:userID} = gs.getUser().getID();"],
+    "description": "getID(): Gets the sys_id of the current user"
+  },
+  "Service Portal: GlideUser getLastName()": {
+    "prefix": "sp-getLastName",
+    "body": ["var ${1:lastName} = gs.getUser().getLastName();"],
+    "description": "getLastName(): Returns the user's last name"
+  },
+  "Service Portal: GlideUser getUserName()": {
+    "prefix": "sp-getUserName",
+    "body": ["var ${1:username} = gs.getUserName();"],
+    "description": "getUserName(): Returns the current user's username"
+  },
+  "Service Portal: GlideUser hasRole()": {
+    "prefix": "sp-hasRole",
+    "body": ["var ${1:hasRole} = gs.getUser().hasRole('${2:admin}');"],
+    "description": "hasRole(): Determines if the current user has the specified role"
+  },
+  "Service Portal: GlideUser isMemberOf()": {
+    "prefix": "sp-isMemberOf",
+    "body": ["var ${1:isMember} = gs.getUser().isMemberOf('${2:Service Desk}');"],
+    "description": "isMemberOf(): Determines if the current user is a member of the specified group"
+  },
   "Service Portal: AngularJS Module": {
     "prefix": "sp-module",
     "body": [
