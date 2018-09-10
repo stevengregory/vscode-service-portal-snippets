@@ -35,7 +35,7 @@
     "description": "AngularJS Controller: is defined by a JavaScript constructor function that is used to augment the scope"
   },
   "Service Portal: Embedded widget": {
-    "prefix": "sp-embed-widget",
+    "prefix": "sp-spUtil-embed-widget",
     "body": [
       "spUtil.get('${1:example-widget}').then(function(response) {",
       "\t${2:c.exampleWidget} = response;",
@@ -44,7 +44,7 @@
     "description": "Embedded widget: Use spUtil.get() to get a widget model in the client script"
   },
   "Service Portal: Embedded widget with options": {
-    "prefix": "sp-embed-widget-options",
+    "prefix": "sp-spUtil-embed-widget-options",
     "body": [
       "spUtil.get('${1:example-widget}', {${2:sys_id}: '${3:example_sys_id}'}).then(function(response) {",
       "\t${4:c.exampleWidget} = response;",
@@ -127,7 +127,7 @@
     "description": "AngularJS $onInit: Called on each controller after all the controllers on an element have been constructed and had their bindings initialized"
   },
   "Service Portal: Record Watch": {
-    "prefix": "sp-record-watcher",
+    "prefix": "sp-spUtil-record-watch",
     "body": [
       "spUtil.recordWatch($$scope, '${1:incident}', '${2:active=true}', function(name, data) {",
       "\t$3console.log(name);",

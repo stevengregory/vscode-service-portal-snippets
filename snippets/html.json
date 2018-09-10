@@ -1,11 +1,11 @@
 {
   "Service Portal: Embedded widget": {
-    "prefix": "sp-embed-widget",
+    "prefix": "sp-element-embed-widget",
     "body": ["<widget id=\"${1:widget-cool-clock}\"></widget>"],
     "description": "Embedded widget: Use the <widget></widget> element to embed a widget in an HTML template. Pass in the ID of the widget you are trying to embed as a parameter"
   },
   "Service Portal: Embedded widget with spUtil": {
-    "prefix": "sp-embed-widget-spUtil",
+    "prefix": "sp-spUtil-embed-widget",
     "body": ["<sp-widget widget=\"${1:c.exampleWidget}\"></sp-widget>"],
     "description": "Embedded widget: Use the <sp-widget></sp-widget> element along with the client spUtil utility method to embed a widget in an HTML template"
   },
