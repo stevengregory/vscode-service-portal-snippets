@@ -1,18 +1,23 @@
 {
   "name": "servicenow-service-portal-snippets",
   "displayName": "ServiceNow Service Portal Snippets",
-  "description": "A collection of handy ServiceNow Service Portal snippets",
+  "description": "A collection of ServiceNow Service Portal snippets",
   "version": "0.0.1",
   "publisher": "stevengregory",
   "icon": "images/icon.png",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevengregory/vscode-service-portal-snippets.git"
+  },
   "engines": {
     "vscode": "^1.26.0"
   },
-  "categories": [
-    "ServiceNow",
-    "Service Portal",
-    "Snippets"
+  "categories": ["Snippets"],
+  "keywords" : [
+      "ServiceNow",
+      "Service Portal",
+      "AngularJS"
   ],
   "contributes": {
     "snippets": [
