@@ -34,24 +34,6 @@
     ],
     "description": "AngularJS Controller: is defined by a JavaScript constructor function that is used to augment the scope"
   },
-  "Service Portal: Embedded widget": {
-    "prefix": "sp-spUtil-embed-widget",
-    "body": [
-      "spUtil.get('${1:example-widget}').then(function(response) {",
-      "\t${2:c.exampleWidget} = response;",
-      "});"
-    ],
-    "description": "Embedded widget: Use spUtil.get() to get a widget model in the client script"
-  },
-  "Service Portal: Embedded widget with options": {
-    "prefix": "sp-spUtil-embed-widget-options",
-    "body": [
-      "spUtil.get('${1:example-widget}', {${2:sys_id}: '${3:example_sys_id}'}).then(function(response) {",
-      "\t${4:c.exampleWidget} = response;",
-      "});"
-    ],
-    "description": "Embedded widget: Use spUtil.get() to get a widget model in the client script"
-  },
   "Service Portal: AngularJS $emit": {
     "prefix": "sp-ng-emit",
     "body": ["$$rootScope.$$emit('${1:eventName}', ${2:args});"],
@@ -126,36 +108,69 @@
     ],
     "description": "AngularJS $onInit: Called on each controller after all the controllers on an element have been constructed and had their bindings initialized"
   },
-  "Service Portal: Record Watch": {
-    "prefix": "sp-spUtil-record-watch",
-    "body": [
-      "spUtil.recordWatch($$scope, '${1:incident}', '${2:active=true}', function(name, data) {",
-      "\t$3console.log(name);",
-      "\t$4console.log(data);",
-      "});"
-    ],
-    "description": "Record Watch: A tool that allows a widget developer to respond to table updates in real-time"
-  },
   "Service Portal: AngularJS Service": {
     "prefix": "sp-ng-service",
     "body": [
       "(function() {",
-      "\t'use strict';",
-      "",
-      "\tfunction ${1:serviceName}() {",
-      "\t\tvar service = {",
-      "\t\t\t${2:getSomething}: ${3:getSomething}",
-      "\t\t};",
-      "\t\treturn service;",
-      "",
-      "\t\tfunction ${4:getSomething}() {}",
-      "\t}",
-      "",
-      "\tangular",
-      "\t\t.module('${5:moduleName}')",
-      "\t\t.service('${6:serviceName}', ${7:serviceName});",
-      "})();"
-    ],
-    "description": "AngularJS Service: is a constructor function which is invoked once at runtime and wired together using dependency injection (DI)"
-  }
-}
+        "\t'use strict';",
+        "",
+        "\tfunction ${1:serviceName}() {",
+          "\t\tvar service = {",
+            "\t\t\t${2:getSomething}: ${3:getSomething}",
+            "\t\t};",
+            "\t\treturn service;",
+            "",
+            "\t\tfunction ${4:getSomething}() {}",
+            "\t}",
+            "",
+            "\tangular",
+            "\t\t.module('${5:moduleName}')",
+            "\t\t.service('${6:serviceName}', ${7:serviceName});",
+            "})();"
+          ],
+          "description": "AngularJS Service: is a constructor function which is invoked once at runtime and wired together using dependency injection (DI)"
+        },
+        "Service Portal: spUtil addErrorMessage": {
+          "prefix": "sp-spUtil-addErrorMessage",
+          "body": ["spUtil.addErrorMessage('${1:Sample error message}');"],
+          "description": "addErrorMessage: Displays a notification error message"
+        },
+        "Service Portal: spUtil addInfoMessage": {
+          "prefix": "sp-spUtil-addInfoMessage",
+          "body": ["spUtil.addInfoMessage('${1:Sample info message}');"],
+          "description": "addInfoMessage: Displays a notification info message"
+        },
+        "Service Portal: spUtil addTrivialMessage": {
+          "prefix": "sp-spUtil-addTrivialMessage",
+          "body": ["spUtil.addTrivialMessage('${1:Sample trivial message}');"],
+          "description": "addTrivialMessage: Displays a trivial notification message"
+        },
+        "Service Portal: spUtil Get Widget": {
+          "prefix": "sp-spUtil-get",
+          "body": [
+            "spUtil.get('${1:example-widget}').then(function(response) {",
+            "\t${2:c.exampleWidget} = response;",
+            "});"
+          ],
+          "description": "Embedded widget: Use spUtil.get() to get a widget model in the client script"
+        },
+        "Service Portal: spUtil Get Widget with Options": {
+          "prefix": "sp-spUtil-get-options",
+          "body": [
+            "spUtil.get('${1:example-widget}', {${2:sys_id}: '${3:example_sys_id}'}).then(function(response) {",
+            "\t${4:c.exampleWidget} = response;",
+            "});"
+          ],
+          "description": "Embedded widget: Use spUtil.get() to get a widget model in the client script"
+        },
+        "Service Portal: spUtil Record Watch": {
+          "prefix": "sp-spUtil-record-watch",
+          "body": [
+            "spUtil.recordWatch($$scope, '${1:incident}', '${2:active=true}', function(name, data) {",
+            "\t$3console.log(name);",
+            "\t$4console.log(data);",
+            "});"
+          ],
+          "description": "Record Watch: A tool that allows a widget developer to respond to table updates in real-time"
+        }
+      }

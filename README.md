@@ -35,11 +35,14 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | -------------------------------- | ------------------------------------------ |
 | `sp-ng-broadcast`                | `$broadcast`                               |
 | `sp-ng-controller`               | Creates a client controller                |
-| `sp-spUtil-embed-widget`         | Embed a widget in the client script        |
-| `sp-spUtil-embed-widget-options` | Embed a widget with options                |
 | `sp-ng-emit`                     | `$emit`                                    |
 | `sp-ng-on`                       | `$on`                                      |
 | `sp-ng-onInit`                   | `$onInit`                                  |
+| `sp-spUtil-addErrorMessage`      | Displays a notification error message      |
+| `sp-spUtil-addInfoMessage`       | Displays a notification info message       |
+| `sp-spUtil-addTrivialMessage`    | Displays a trivial notification message    |
+| `sp-spUtil-get`                  | Embed a widget in the client script        |
+| `sp-spUtil-get-options`          | Embed a widget with options                |
 | `sp-spUtil-record-watch`         | Tool to capture real-time table updates    |
 
 ### Server Snippets
