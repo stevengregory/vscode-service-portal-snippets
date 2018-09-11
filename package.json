@@ -4,6 +4,7 @@
   "description": "A collection of handy ServiceNow Service Portal snippets",
   "version": "0.0.1",
   "publisher": "stevengregory",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.26.0"
   },
