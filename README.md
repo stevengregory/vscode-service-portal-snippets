@@ -65,3 +65,7 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | `sp-ng-component`                | Creates an AngularJS component             |
 | `sp-ng-module`                   | Creates an AngularJS module                |
 | `sp-ng-service`                  | Creates an AngularJS service               |
+
+## Pro Tip
+
+No need to type any dashes: "spngr" -> "sp-ng-repeat" snippet
