@@ -13,7 +13,6 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | Snippet                          | Purpose                                    |
 | -------------------------------- | ------------------------------------------ |
 | `sp-element-embed-widget`        | Embed a widget using `<widget>`            |
-| `sp-spUtil-embed-widget`         | Embed a widget using `<sp-widget>`         |
 | `sp-ng-class-attribute`          | `ng-class` with attribute                  |
 | `sp-ng-class-css`                | `ng-class` with CSS class                  |
 | `sp-ng-if`                       | `ng-if`                                    |
@@ -22,6 +21,11 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | `sp-ng-repeat-combo`             | `ng-repeat` with orderBy and track by      |
 | `sp-ng-repeat-orderBy`           | `ng-repeat` with orderBy                   |
 | `sp-ng-repeat-track-by`          | `ng-repeat` with track by                  |
+| `sp-spModal-alert`               | Displays an alert                          |
+| `sp-spModal-confirm`             | Displays a confirmation message            |
+| `sp-spModal-open`                | Opens a modal window using options         |
+| `sp-spModal-prompt`              | Displays a prompt for user input           |
+| `sp-spUtil-embed-widget`         | Embed a widget using `<sp-widget>`         |
 
 ### CSS Snippets
 
@@ -38,6 +42,10 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | `sp-ng-emit`                     | `$emit`                                    |
 | `sp-ng-on`                       | `$on`                                      |
 | `sp-ng-onInit`                   | `$onInit`                                  |
+| `sp-spModal-alert`               | Displays an alert                          |
+| `sp-spModal-confirm`             | Displays a confirmation message            |
+| `sp-spModal-open`                | Opens a modal window with embedded widget  |
+| `sp-spModal-prompt`              | Displays a prompt for user input           |
 | `sp-spUtil-addErrorMessage`      | Displays a notification error message      |
 | `sp-spUtil-addInfoMessage`       | Displays a notification info message       |
 | `sp-spUtil-addTrivialMessage`    | Displays a trivial notification message    |

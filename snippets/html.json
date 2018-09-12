@@ -4,11 +4,6 @@
     "body": ["<widget id=\"${1:widget-cool-clock}\"></widget>"],
     "description": "Embedded widget: Use the <widget></widget> element to embed a widget in an HTML template. Pass in the ID of the widget you are trying to embed as a parameter"
   },
-  "Service Portal: Embedded widget with spUtil": {
-    "prefix": "sp-spUtil-embed-widget",
-    "body": ["<sp-widget widget=\"${1:c.exampleWidget}\"></sp-widget>"],
-    "description": "Embedded widget: Use the <sp-widget></sp-widget> element along with the client spUtil utility method to embed a widget in an HTML template"
-  },
   "Service Portal: AngularJS ngClass with attribute": {
     "prefix": "sp-ng-class-attribute",
     "body": ["<p ng-class=\"${1:expression}\">Example</p>"],
@@ -34,6 +29,11 @@
     "body": ["<div ng-repeat=\"item in c.${1:items}\"></div>"],
     "description": "AngularJS ngRepeat: is a directive which iterates over a collection"
   },
+  "Service Portal: AngularJS ngRepeat combo with orderBy and track by": {
+    "prefix": "sp-ng-repeat-combo",
+    "body": ["<div ng-repeat=\"item in c.${1:items} | orderBy: '${2:order}' track by ${3:item.id}\"></div>"],
+    "description": "AngularJS ngRepeat: is a directive which iterates over a collection; with a combo orderBy filter and tracking expression"
+  },
   "Service Portal: AngularJS ngRepeat with orderBy": {
     "prefix": "sp-ng-repeat-orderBy",
     "body": ["<div ng-repeat=\"item in c.${1:items} | orderBy: '${2:order}'\"></div>"],
@@ -44,9 +44,35 @@
     "body": ["<div ng-repeat=\"item in c.${1:items} track by ${2:item.id}\"></div>"],
     "description": "AngularJS ngRepeat: is a directive which iterates over a collection; with an added tracking expression"
   },
-  "Service Portal: AngularJS ngRepeat combo with orderBy and track by": {
-    "prefix": "sp-ng-repeat-combo",
-    "body": ["<div ng-repeat=\"item in c.${1:items} | orderBy: '${2:order}' track by ${3:item.id}\"></div>"],
-    "description": "AngularJS ngRepeat: is a directive which iterates over a collection; with a combo orderBy filter and tracking expression"
+  "Service Portal: spModal alert": {
+    "prefix": "sp-spModal-alert",
+    "body": ["<button ng-click=\"${1:c.onAlert()}\" class=\"btn btn-default\">${2:Alert}</button>"],
+    "description": "spModal alert: Displays an alert"
+  },
+  "Service Portal: spModal confirm": {
+    "prefix": "sp-spModal-confirm",
+    "body": [
+      "<button ng-click=\"${1:c.onConfirm()}\" class=\"btn btn-default\">${2:Confirm}</button>",
+      "<span>{{${3:c.confirmed}}}</span>"
+    ],
+    "description": "spModal confirm: Displays a confirmation message"
+  },
+  "Service Portal: spModal open": {
+    "prefix": "sp-spModal-open",
+    "body": ["<button ng-click=\"${1:c.onWidget('widget-cool-clock')}\" class=\"btn btn-default\">${2:Cool Clock}</button>"],
+    "description": "spModal open: Opens a modal window using options"
+  },
+  "Service Portal: spModal prompt": {
+    "prefix": "sp-spModal-prompt",
+    "body": [
+      "<button ng-click=\"${1:c.onPrompt()}\" class=\"btn btn-default\">${2:Prompt}</button>",
+      "<div ng-show=\"${3:c.name}\">${4:You answered} <span>${5:{{c.name}}}</span></div>"
+    ],
+    "description": "spModal prompt: Displays a prompt for user input"
+  },
+  "Service Portal: spUtil with embedded widget": {
+    "prefix": "sp-spUtil-embed-widget",
+    "body": ["<sp-widget widget=\"${1:c.exampleWidget}\"></sp-widget>"],
+    "description": "Embedded widget: Use the <sp-widget></sp-widget> element along with the client spUtil utility method to embed a widget in an HTML template"
   }
 }

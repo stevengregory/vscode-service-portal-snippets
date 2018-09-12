@@ -130,6 +130,75 @@
           ],
           "description": "AngularJS Service: is a constructor function which is invoked once at runtime and wired together using dependency injection (DI)"
         },
+        "Service Portal: spModal alert": {
+          "prefix": "sp-spModal-alert",
+          "body": [
+            "function OnAlertController(spModal) {",
+            "\tvar c = this;",
+            "\tc.onAlert = onAlert;",
+            "",
+            "\tfunction onAlert() {",
+            "\t\treturn spModal.alert('How do you feel today?').then(function(answer) {",
+            "\t\t\tc.simple = answer;",
+            "\t\t});",
+            "\t}",
+            "}"
+          ],
+          "description": "spModal alert: Displays an alert"
+        },
+        "Service Portal: spModal confirm": {
+          "prefix": "sp-spModal-confirm",
+          "body": [
+            "function OnConfirmController(spModal) {",
+            "\tvar c = this;",
+            "\tc.onConfirm = onConfirm;",
+            "",
+            "\tfunction onConfirm() {",
+            "\t\tc.confirmed = 'asking';",
+            "\t\treturn spModal.confirm('Can you confirm or deny this?').then(function(confirmed) {",
+            "\t\t\tc.confirmed = confirmed;",
+            "\t\t});",
+            "\t}",
+            "}"
+          ],
+          "description": "spModal confirm: Displays a confirmation message"
+        },
+        "Service Portal: spModal open": {
+          "prefix": "sp-spModal-open",
+          "body": [
+            "function OnWidgetController(spModal) {",
+            "\tvar c = this;",
+            "\tc.onWidget = onWidget;",
+            "",
+            "\tfunction onWidget(widgetId, widgetInput) {",
+            "\t\treturn spModal.open({",
+            "\t\t\ttitle: 'Displaying widget ' + widgetId,",
+            "\t\t\twidget: widgetId,",
+            "\t\t\twidgetInput: widgetInput || {}",
+            "\t\t}).then(function() {",
+            "\t\t\tconsole.log('widget dismissed');",
+            "\t\t});",
+            "\t}",
+            "}"
+          ],
+          "description": "spModal open: Opens a modal window with an embedded widget"
+        },
+        "Service Portal: spModal prompt": {
+          "prefix": "sp-spModal-prompt",
+          "body": [
+            "function onPromptController(spModal) {",
+            "\tvar c = this;",
+            "\tc.onPrompt = onPrompt;",
+            "",
+            "\tfunction onPrompt() {",
+            "\t\treturn spModal.prompt('Your name please', c.name).then(function(name) {",
+            "\t\t\tc.name = name;",
+            "\t\t});",
+            "\t}",
+            "}"
+          ],
+          "description": "spModal prompt: Displays a prompt for user input"
+        },
         "Service Portal: spUtil addErrorMessage": {
           "prefix": "sp-spUtil-addErrorMessage",
           "body": ["spUtil.addErrorMessage('${1:Sample error message}');"],
