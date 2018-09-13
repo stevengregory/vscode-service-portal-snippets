@@ -77,3 +77,7 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 ## Pro Tip
 
 No need to type any dashes: "spngr" -> "sp-ng-repeat" snippet
+
+## License
+
+[MIT License](LICENSE)
