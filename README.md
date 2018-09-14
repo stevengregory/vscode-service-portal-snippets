@@ -57,6 +57,14 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 
 | Snippet                          | Purpose                                    |
 | -------------------------------- | ------------------------------------------ |
+| `sp-record-addActiveQuery`       | Adds a filter to return active records     |
+| `sp-record-addEncodedQuery`      | Adds an encoded query to other queries     |
+| `sp-record-create`               | Creates a GlideRecord class for a table    |
+| `sp-record-deleteMultiple`       | Deletes multiple records                   |
+| `sp-record-deleteRecord`         | Deletes the current record                 |
+| `sp-record-get`                  | A method used to query for single record   |
+| `sp-record-getRowCount`          | Get the number of rows for a query result  |
+| `sp-record-setLimit`             | The maximum number of records to fetch     |
 | `sp-user-getDisplayName`         | Get the current user's display name        |
 | `sp-user-getEmail`               | Get the user's email address               |
 | `sp-user-getFirstName`           | Get the user's first name                  |

@@ -79,6 +79,78 @@
     "body": ["var ${1:isMember} = gs.getUser().isMemberOf('${2:Service Desk}');"],
     "description": "isMemberOf(): Determines if the current user is a member of the specified group"
   },
+  "Service Portal: GlideRecord addActiveQuery()": {
+    "prefix": "sp-record-addActiveQuery",
+    "body": [
+      "var inc = new GlideRecord('${1:incident}');",
+      "inc.addActiveQuery();",
+      "inc.query();"
+    ],
+    "description": "addActiveQuery(): Adds a filter to return active records"
+  },
+  "Service Portal: GlideRecord addEncodedQuery()": {
+    "prefix": "sp-record-addEncodedQuery",
+    "body": [
+      "var query = '${1:priority=1^ORpriority=2}';",
+      "var gr = new GlideRecord('${1:incident}');",
+      "gr.addEncodedQuery(query);",
+      "gr.query();"
+    ],
+    "description": "addEncodedQuery(): Adds an encoded query to other queries that may have been set"
+  },
+  "Service Portal: GlideRecord create": {
+    "prefix": "sp-record-create",
+    "body": ["var gr = new GlideRecord('${1:incident}');"],
+    "description": "GlideRecord: Creates an instance of the GlideRecord class for the specified table"
+  },
+  "Service Portal: GlideRecord deleteMultiple()": {
+    "prefix": "sp-record-deleteMultiple",
+    "body": [
+      "var gr = new GlideRecord('${1:incident}');",
+      "gr.addQuery('${2:active}', '${3:false}');",
+      "gr.deleteMultiple();"
+    ],
+    "description": "deleteMultiple(): Deletes multiple records that satisfy the query condition"
+  },
+  "Service Portal: GlideRecord deleteRecord()": {
+    "prefix": "sp-record-deleteRecord",
+    "body": [
+      "var gr = new GlideRecord('${1:incident}');",
+      "gr.addQuery('${2:sys_id}', '${3:99ebb4156fa831005be8883e6b3ee4b9}');",
+      "gr.query();",
+      "gr.next();",
+      "gr.deleteRecord();"
+    ],
+    "description": "deleteRecord(): Deletes the current record"
+  },
+  "Service Portal: GlideRecord get()": {
+    "prefix": "sp-record-get",
+    "body": [
+      "var gr = new GlideRecord('${1:incident}');",
+      "gr.get('${2:bf5a8df9db55d700abd4f9361d961937}');",
+      "gs.info(${3:gr.number});"
+    ],
+    "description": "get(): This method is expected to be used to query for single records"
+  },
+  "Service Portal: GlideRecord getRowCount()": {
+    "prefix": "sp-record-getRowCount",
+    "body": [
+      "var gr = new GlideRecord('${1:incident}');",
+      "gr.query();",
+      "gs.info(${2:'Records in incident table: ' + gr.getRowCount()});"
+    ],
+    "description": "getRowCount(): Retrieves the number of rows in the query result"
+  },
+  "Service Portal: GlideRecord setLimit()": {
+    "prefix": "sp-record-setLimit",
+    "body": [
+      "var gr = new GlideRecord('${1:incident}');",
+      "gr.orderByDesc('${2:sys_created_on}');",
+      "gr.setLimit(${3:10});",
+      "gr.query();"
+    ],
+    "description": "setLimit(): This method is expected to be used to query for single records"
+  },
   "Service Portal: AngularJS Module": {
     "prefix": "sp-ng-module",
     "body": [
