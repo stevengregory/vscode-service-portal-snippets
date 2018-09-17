@@ -141,6 +141,17 @@
     ],
     "description": "getRowCount(): Retrieves the number of rows in the query result"
   },
+  "Service Portal: GlideRecord insert()": {
+    "prefix": "sp-record-insert",
+    "body": [
+      "var gr = new GlideRecord('${1:problem}');",
+      "gr.initialize();",
+      "gr.${2:short_description} = '${3:Ninja Issue}';",
+      "gr.${4:description} = '${5:Ninja attack on CMDB}';",
+      "gr.insert();"
+    ],
+    "description": "insert(): Inserts a new record using the field values that have been set for the current record"
+  },
   "Service Portal: GlideRecord setLimit()": {
     "prefix": "sp-record-setLimit",
     "body": [

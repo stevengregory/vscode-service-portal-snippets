@@ -64,6 +64,7 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | `sp-record-deleteRecord`         | Deletes the current record                 |
 | `sp-record-get`                  | A method used to query for single record   |
 | `sp-record-getRowCount`          | Get the number of rows for a query result  |
+| `sp-record-insert`               | Inserts a new record                       |
 | `sp-record-setLimit`             | The maximum number of records to fetch     |
 | `sp-record-update`               | Updates the current record                 |
 | `sp-record-updateMultiple`       | Updates multiple records                   |
