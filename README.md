@@ -82,9 +82,18 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | `sp-ng-module`                   | Creates an AngularJS module                |
 | `sp-ng-service`                  | Creates an AngularJS service               |
 
+## Installation
+
+```
+Mac:      Select ⌘+P and then type: ext install service-portal-snippets
+Windows:  Select Ctrl+P and then type: ext install service-portal-snippets
+```
+
+Alternatively, simply bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of VS Code; then browse for Service Portal Snippets and hit the install button.
+
 ## Pro Tip
 
-No need to type any dashes: "spngr" -> "sp-ng-repeat" snippet
+Simply type the snippet without dashes to activate intellisense.
 
 ## License
 
