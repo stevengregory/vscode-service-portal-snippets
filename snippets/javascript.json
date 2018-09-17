@@ -107,7 +107,7 @@
     "prefix": "sp-record-deleteMultiple",
     "body": [
       "var gr = new GlideRecord('${1:incident}');",
-      "gr.addQuery('${2:active}', '${3:false}');",
+      "gr.addQuery('${2:active}', ${3:false});",
       "gr.deleteMultiple();"
     ],
     "description": "deleteMultiple(): Deletes multiple records that satisfy the query condition"
@@ -150,6 +150,27 @@
       "gr.query();"
     ],
     "description": "setLimit(): This method is expected to be used to query for single records"
+  },
+  "Service Portal: GlideRecord update()": {
+    "prefix": "sp-record-update",
+    "body": [
+      "var gr = new GlideRecord('${1:incident}');",
+      "gr.get('${2:4c085e2e1324e700c664f8fed144b062}');",
+      "gr.${3:category} = '${4:database}';",
+      "gr.update();"
+    ],
+    "description": "update(): Updates the GlideRecord with any changes that have been made"
+  },
+  "Service Portal: GlideRecord updateMultiple()": {
+    "prefix": "sp-record-updateMultiple",
+    "body": [
+      "var gr = new GlideRecord('${1:incident}')",
+      "gr.addQuery('${2:active}', ${3:true});",
+      "gr.query();",
+      "gr.setValue('${4:state}', ${5:4});",
+      "gr.updateMultiple();"
+    ],
+    "description": "updateMultiple(): Updates each GlideRecord in the list with any changes that have been made"
   },
   "Service Portal: AngularJS Module": {
     "prefix": "sp-ng-module",
