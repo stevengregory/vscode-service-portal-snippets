@@ -12,7 +12,6 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 
 | Snippet                          | Purpose                                    |
 | -------------------------------- | ------------------------------------------ |
-| `sp-element-embed-widget`        | Embed a widget using `<widget>`            |
 | `sp-ng-class-attribute`          | `ng-class` with attribute                  |
 | `sp-ng-class-css`                | `ng-class` with CSS class                  |
 | `sp-ng-if`                       | `ng-if`                                    |
@@ -21,11 +20,12 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | `sp-ng-repeat-combo`             | `ng-repeat` with orderBy and track by      |
 | `sp-ng-repeat-orderBy`           | `ng-repeat` with orderBy                   |
 | `sp-ng-repeat-track-by`          | `ng-repeat` with track by                  |
-| `sp-spModal-alert`               | Displays an alert                          |
-| `sp-spModal-confirm`             | Displays a confirmation message            |
-| `sp-spModal-open`                | Opens a modal window using options         |
-| `sp-spModal-prompt`              | Displays a prompt for user input           |
-| `sp-spUtil-embed-widget`         | Embed a widget using `<sp-widget>`         |
+| `sp-modal-alert`                 | Displays an alert                          |
+| `sp-modal-confirm`               | Displays a confirmation message            |
+| `sp-modal-open`                  | Opens a modal window using options         |
+| `sp-modal-prompt`                | Displays a prompt for user input           |
+| `sp-tag-embed-widget`            | Embed a widget using `<widget>`            |
+| `sp-util-embed-widget`           | Embed a widget using `<sp-widget>`         |
 
 ### CSS Snippets
 
@@ -43,16 +43,16 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | `sp-ng-http`                     | `$http`                                    |
 | `sp-ng-on`                       | `$on`                                      |
 | `sp-ng-onInit`                   | `$onInit`                                  |
-| `sp-spModal-alert`               | Displays an alert                          |
-| `sp-spModal-confirm`             | Displays a confirmation message            |
-| `sp-spModal-open`                | Opens a modal window with embedded widget  |
-| `sp-spModal-prompt`              | Displays a prompt for user input           |
-| `sp-spUtil-addErrorMessage`      | Displays a notification error message      |
-| `sp-spUtil-addInfoMessage`       | Displays a notification info message       |
-| `sp-spUtil-addTrivialMessage`    | Displays a trivial notification message    |
-| `sp-spUtil-get`                  | Embed a widget in the client script        |
-| `sp-spUtil-get-options`          | Embed a widget with options                |
-| `sp-spUtil-record-watch`         | Tool to capture real-time table updates    |
+| `sp-modal-alert`                 | Displays an alert                          |
+| `sp-modal-confirm`               | Displays a confirmation message            |
+| `sp-modal-open`                  | Opens a modal window with embedded widget  |
+| `sp-modal-prompt`                | Displays a prompt for user input           |
+| `sp-util-addErrorMessage`        | Displays a notification error message      |
+| `sp-util-addInfoMessage`         | Displays a notification info message       |
+| `sp-util-addTrivialMessage`      | Displays a trivial notification message    |
+| `sp-util-get`                    | Embed a widget in the client script        |
+| `sp-util-get-options`            | Embed a widget with options                |
+| `sp-util-record-watch`           | Tool to capture real-time table updates    |
 
 ### Server Snippets
 

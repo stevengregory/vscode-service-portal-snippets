@@ -216,7 +216,7 @@
     "prefix": "sp-ng-onInit",
     "body": [
       "c.$$onInit = function() {",
-      "\t$1",
+      "\t$0",
       "};"
     ],
     "description": "AngularJS $onInit: Called on each controller after all the controllers on an element have been constructed and had their bindings initialized"
@@ -244,7 +244,7 @@
           "description": "AngularJS Service: is a constructor function which is invoked once at runtime and wired together using dependency injection (DI)"
         },
         "Service Portal: spModal alert": {
-          "prefix": "sp-spModal-alert",
+          "prefix": "sp-modal-alert",
           "body": [
             "function OnAlertController(spModal) {",
             "\tvar c = this;",
@@ -260,7 +260,7 @@
           "description": "spModal alert: Displays an alert"
         },
         "Service Portal: spModal confirm": {
-          "prefix": "sp-spModal-confirm",
+          "prefix": "sp-modal-confirm",
           "body": [
             "function OnConfirmController(spModal) {",
             "\tvar c = this;",
@@ -277,7 +277,7 @@
           "description": "spModal confirm: Displays a confirmation message"
         },
         "Service Portal: spModal open": {
-          "prefix": "sp-spModal-open",
+          "prefix": "sp-modal-open",
           "body": [
             "function OnWidgetController(spModal) {",
             "\tvar c = this;",
@@ -297,7 +297,7 @@
           "description": "spModal open: Opens a modal window with an embedded widget"
         },
         "Service Portal: spModal prompt": {
-          "prefix": "sp-spModal-prompt",
+          "prefix": "sp-modal-prompt",
           "body": [
             "function OnPromptController(spModal) {",
             "\tvar c = this;",
@@ -313,22 +313,22 @@
           "description": "spModal prompt: Displays a prompt for user input"
         },
         "Service Portal: spUtil addErrorMessage": {
-          "prefix": "sp-spUtil-addErrorMessage",
+          "prefix": "sp-util-addErrorMessage",
           "body": ["spUtil.addErrorMessage('${1:Sample error message}');"],
           "description": "addErrorMessage: Displays a notification error message"
         },
         "Service Portal: spUtil addInfoMessage": {
-          "prefix": "sp-spUtil-addInfoMessage",
+          "prefix": "sp-util-addInfoMessage",
           "body": ["spUtil.addInfoMessage('${1:Sample info message}');"],
           "description": "addInfoMessage: Displays a notification info message"
         },
         "Service Portal: spUtil addTrivialMessage": {
-          "prefix": "sp-spUtil-addTrivialMessage",
+          "prefix": "sp-util-addTrivialMessage",
           "body": ["spUtil.addTrivialMessage('${1:Sample trivial message}');"],
           "description": "addTrivialMessage: Displays a trivial notification message"
         },
         "Service Portal: spUtil Get Widget": {
-          "prefix": "sp-spUtil-get",
+          "prefix": "sp-util-get",
           "body": [
             "spUtil.get('${1:example-widget}').then(function(response) {",
             "\t${2:c.exampleWidget} = response;",
@@ -337,7 +337,7 @@
           "description": "Embedded widget: Use spUtil.get() to get a widget model in the client script"
         },
         "Service Portal: spUtil Get Widget with Options": {
-          "prefix": "sp-spUtil-get-options",
+          "prefix": "sp-util-get-options",
           "body": [
             "spUtil.get('${1:example-widget}', {${2:sys_id}: '${3:example_sys_id}'}).then(function(response) {",
             "\t${4:c.exampleWidget} = response;",
@@ -346,7 +346,7 @@
           "description": "Embedded widget: Use spUtil.get() to get a widget model in the client script"
         },
         "Service Portal: spUtil Record Watch": {
-          "prefix": "sp-spUtil-record-watch",
+          "prefix": "sp-util-record-watch",
           "body": [
             "spUtil.recordWatch($$scope, '${1:incident}', '${2:active=true}', function(name, data) {",
             "\t$3console.log(name);",
