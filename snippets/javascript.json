@@ -299,7 +299,7 @@
         "Service Portal: spModal prompt": {
           "prefix": "sp-spModal-prompt",
           "body": [
-            "function onPromptController(spModal) {",
+            "function OnPromptController(spModal) {",
             "\tvar c = this;",
             "\tc.onPrompt = onPrompt;",
             "",
