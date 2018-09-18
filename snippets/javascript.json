@@ -93,7 +93,10 @@
     "body": [
       "var inc = new GlideRecord('${1:incident}');",
       "inc.addActiveQuery();",
-      "inc.query();"
+      "inc.query();",
+      "while (inc.next()) {",
+      "\t$3",
+      "}"
     ],
     "description": "addActiveQuery(): Adds a filter to return active records"
   },
@@ -101,9 +104,12 @@
     "prefix": "sp-record-addEncodedQuery",
     "body": [
       "var query = '${1:priority=1^ORpriority=2}';",
-      "var gr = new GlideRecord('${1:incident}');",
+      "var gr = new GlideRecord('${2:incident}');",
       "gr.addEncodedQuery(query);",
-      "gr.query();"
+      "gr.query();",
+      "while (gr.next()) {",
+      "\t$3",
+      "}"
     ],
     "description": "addEncodedQuery(): Adds an encoded query to other queries that may have been set"
   },
