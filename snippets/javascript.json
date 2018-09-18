@@ -39,6 +39,15 @@
     "body": ["$$rootScope.$$emit('${1:eventName}', ${2:args});"],
     "description": "AngularJS $emit: Dispatches an event name upwards through the scope hierarchy"
   },
+  "Service Portal: AngularJS $http": {
+    "prefix": "sp-ng-http",
+    "body": [
+      "$$http.get('${1:/api/now/table/problem?active=true&sysparm_limit=1}').then(function(response) {",
+      "\t${2:c.dataObject} = response.data.result;",
+      "});"
+    ],
+    "description": "AngularJS $http: The $http service is a core AngularJS service that facilitates communication with the remote HTTP servers via the browser's XMLHttpRequest object or via JSONP"
+  },
   "Service Portal: GlideUser getDisplayName()": {
     "prefix": "sp-user-getDisplayName",
     "body": ["var ${1:currentUser} = gs.getUser().getDisplayName();"],

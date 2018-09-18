@@ -40,6 +40,7 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | `sp-ng-broadcast`                | `$broadcast`                               |
 | `sp-ng-controller`               | Creates a client controller                |
 | `sp-ng-emit`                     | `$emit`                                    |
+| `sp-ng-http`                     | `$http`                                    |
 | `sp-ng-on`                       | `$on`                                      |
 | `sp-ng-onInit`                   | `$onInit`                                  |
 | `sp-spModal-alert`               | Displays an alert                          |
