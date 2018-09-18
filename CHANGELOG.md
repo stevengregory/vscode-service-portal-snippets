@@ -1,9 +1,11 @@
 # Service Portal Snippets Changelog
 
-<a name="1.0.0"></a>
+<a name="0.1.0"></a>
 
-## 1.0.0 (2018-09-10)
+## 0.1.0 (2018-09-19)
 
-- Added JavaScript snippets for
-  - snippet 1
-  - snippet 2
+- Added snippets for
+  - HTML
+  - Client
+  - Server
+  - UI Scripts
