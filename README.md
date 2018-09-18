@@ -27,12 +27,6 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | `sp-tag-embed-widget`            | Embed a widget using `<widget>`            |
 | `sp-util-embed-widget`           | Embed a widget using `<sp-widget>`         |
 
-### CSS Snippets
-
-| Snippet                          | Purpose                                    |
-| -------------------------------- | ------------------------------------------ |
-| ``                               |                                            |
-
 ### Client Snippets
 
 | Snippet                          | Purpose                                    |
