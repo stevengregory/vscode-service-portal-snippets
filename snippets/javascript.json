@@ -29,7 +29,7 @@
       "function ${1:Name}Controller() {",
       "\tvar c = this;",
       "",
-      "\tc.$$onInit = function() {$2};",
+      "\tc.$$onInit = function() {$0};",
       "}"
     ],
     "description": "AngularJS Controller: is defined by a JavaScript constructor function that is used to augment the scope"
@@ -229,16 +229,16 @@
         "",
         "\tfunction ${1:serviceName}() {",
           "\t\tvar service = {",
-            "\t\t\t${2:getSomething}: ${3:getSomething}",
+            "\t\t\t${3:getSomething}: ${3:getSomething}",
             "\t\t};",
             "\t\treturn service;",
             "",
-            "\t\tfunction ${4:getSomething}() {}",
+            "\t\tfunction ${3:getSomething}() {$0}",
             "\t}",
             "",
             "\tangular",
-            "\t\t.module('${5:moduleName}')",
-            "\t\t.service('${6:serviceName}', ${7:serviceName});",
+            "\t\t.module('${2:moduleName}')",
+            "\t\t.service('${1:serviceName}', ${1:serviceName});",
             "})();"
           ],
           "description": "AngularJS Service: is a constructor function which is invoked once at runtime and wired together using dependency injection (DI)"
