@@ -1,8 +1,8 @@
 # Service Portal Snippets Changelog
 
-<a name="0.1.0"></a>
+<a name="1.0.0"></a>
 
-## 0.1.0 (2018-09-19)
+## 1.0.0 (2018-09-19)
 
 - Added snippets for
   - HTML
