@@ -63,6 +63,9 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | `sp-record-setLimit`             | The maximum number of records to fetch     |
 | `sp-record-update`               | Updates the current record                 |
 | `sp-record-updateMultiple`       | Updates multiple records                   |
+| `sp-session-getClientIP`         | Returns the client IP address              |
+| `sp-session-getLanguage`         | Returns the session's language code        |
+| `sp-session-isLoggedIn`          | Returns true if the user is logged in      |
 | `sp-user-getDisplayName`         | Get the current user's display name        |
 | `sp-user-getEmail`               | Get the user's email address               |
 | `sp-user-getFirstName`           | Get the user's first name                  |

@@ -198,6 +198,21 @@
     ],
     "description": "updateMultiple(): Updates each GlideRecord in the list with any changes that have been made"
   },
+  "Service Portal: GlideSession getClientIP()": {
+    "prefix": "sp-session-getClientIP",
+    "body": ["var ${1:clientIP} = gs.getSession().getClientIP();"],
+    "description": "getClientIP(): Returns the client IP address"
+  },
+  "Service Portal: GlideSession getLanguage()": {
+    "prefix": "sp-session-getLanguage",
+    "body": ["var ${1:language} = gs.getSession().getLanguage();"],
+    "description": "getLanguage(): Returns the session's language code"
+  },
+  "Service Portal: GlideSession isLoggedIn()": {
+    "prefix": "sp-session-isLoggedIn",
+    "body": ["var ${1:isLoggedIn} = gs.getSession().isLoggedIn();"],
+    "description": "isLoggedIn(): Returns true if the user is logged in"
+  },
   "Service Portal: AngularJS Module": {
     "prefix": "sp-ng-module",
     "body": [
