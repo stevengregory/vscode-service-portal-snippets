@@ -36,7 +36,7 @@
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test"
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/node": "^8.10.25",
