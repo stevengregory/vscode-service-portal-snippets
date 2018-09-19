@@ -19,7 +19,8 @@
   "keywords": [
     "ServiceNow",
     "Service Portal",
-    "AngularJS"
+    "AngularJS",
+    "Snippet"
   ],
   "contributes": {
     "snippets": [
