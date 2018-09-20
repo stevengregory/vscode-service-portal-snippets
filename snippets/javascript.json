@@ -1,7 +1,7 @@
 {
   "Service Portal: AngularJS $broadcast": {
     "prefix": "sp-ng-broadcast",
-    "body": ["$$rootScope.$$broadcast('${1:eventName}', ${2:args});"],
+    "body": ["\\$rootScope.\\$broadcast('${1:eventName}', ${2:args});"],
     "description": "AngularJS $broadcast: Dispatches an event name downwards to all child scopes (and their children)"
   },
   "Service Portal: AngularJS Component": {
@@ -29,20 +29,20 @@
       "function ${1:Name}Controller() {",
       "\tvar c = this;",
       "",
-      "\tc.$$onInit = function() {$0};",
+      "\tc.\\$onInit = function() {$0};",
       "}"
     ],
     "description": "AngularJS Controller: is defined by a JavaScript constructor function that is used to augment the scope"
   },
   "Service Portal: AngularJS $emit": {
     "prefix": "sp-ng-emit",
-    "body": ["$$rootScope.$$emit('${1:eventName}', ${2:args});"],
+    "body": ["\\$rootScope.\\$emit('${1:eventName}', ${2:args});"],
     "description": "AngularJS $emit: Dispatches an event name upwards through the scope hierarchy"
   },
   "Service Portal: AngularJS $http": {
     "prefix": "sp-ng-http",
     "body": [
-      "$$http.get('${1:/api/now/table/problem?active=true&sysparm_limit=1}').then(function(response) {",
+      "\\$http.get('${1:/api/now/table/problem?active=true&sysparm_limit=1}').then(function(response) {",
       "\t${2:c.dataObject} = response.data.result;",
       "});"
     ],
@@ -227,7 +227,7 @@
   "Service Portal: AngularJS $on": {
     "prefix": "sp-ng-on",
     "body": [
-      "$$scope.$$on('${1:eventName}', function(event, args) {",
+      "\\$scope.\\$on('${1:eventName}', function(event, args) {",
       "\t$2console.log(args);",
       "});"
     ],
@@ -236,7 +236,7 @@
   "Service Portal: AngularJS $onInit": {
     "prefix": "sp-ng-onInit",
     "body": [
-      "c.$$onInit = function() {",
+      "c.\\$onInit = function() {",
       "\t$0",
       "};"
     ],
@@ -355,7 +355,7 @@
             "\tvar c = this;",
             "\tc.${2:getWidget} = ${2:getWidget};",
             "",
-            "\tc.$$onInit = function() {",
+            "\tc.\\$onInit = function() {",
             "\t\t${2:getWidget}();",
             "\t};",
             "",
@@ -375,7 +375,7 @@
               "\tvar c = this;",
               "\tc.${2:getWidget} = ${2:getWidget};",
               "",
-              "\tc.$$onInit = function() {",
+              "\tc.\\$onInit = function() {",
               "\t\t${2:getWidget}();",
               "\t};",
               "",
@@ -391,7 +391,7 @@
         "Service Portal: spUtil Record Watch": {
           "prefix": "sp-util-record-watch",
           "body": [
-            "spUtil.recordWatch($$scope, '${1:incident}', '${2:active=true}', function(name, data) {",
+            "spUtil.recordWatch(\\$scope, '${1:incident}', '${2:active=true}', function(name, data) {",
             "\t$3console.log(name);",
             "\t$4console.log(data);",
             "});"
