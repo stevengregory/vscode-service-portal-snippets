@@ -371,9 +371,20 @@
         "Service Portal: spUtil Get Widget with Options": {
           "prefix": "sp-util-get-options",
           "body": [
-            "spUtil.get('${1:example-widget}', {${2:sys_id}: '${3:example_sys_id}'}).then(function(response) {",
-            "\t${4:c.exampleWidget} = response;",
-            "});"
+            "function ${1:Test}Controller(spUtil) {",
+              "\tvar c = this;",
+              "\tc.${2:getWidget} = ${2:getWidget};",
+              "",
+              "\tc.$$onInit = function() {",
+              "\t\t${2:getWidget}();",
+              "\t};",
+              "",
+              "\tfunction ${2:getWidget}() {",
+              "\t\treturn spUtil.get('${3:widget-cool-clock}', {${4:sys_id}: '${5:example_sys_id}'}).then(function(response) {",
+              "\t\t\tc.${6:exampleWidget} = response;",
+              "\t\t});",
+              "\t}",
+              "}"
           ],
           "description": "Embedded widget: Use spUtil.get() to get a widget model in the client script"
         },
