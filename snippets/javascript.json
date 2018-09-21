@@ -269,11 +269,11 @@
           "body": [
             "function OnAlertController(spModal) {",
             "\tvar c = this;",
-            "\tc.onAlert = onAlert;",
+            "\tc.${1:onAlert} = ${1:onAlert};",
             "",
-            "\tfunction onAlert() {",
-            "\t\treturn spModal.alert('How do you feel today?').then(function(answer) {",
-            "\t\t\tc.simple = answer;",
+            "\tfunction ${1:onAlert}() {",
+            "\t\treturn spModal.alert('${2:How do you feel today?}').then(function(answer) {",
+            "\t\t\tc.${3:simple} = answer;",
             "\t\t});",
             "\t}",
             "}"

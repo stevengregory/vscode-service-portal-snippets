@@ -98,7 +98,7 @@ Alternatively, simply bring up the Extensions view by clicking on the Extensions
 
 ## Pro Tip
 
-Simply type the snippet without dashes to activate intellisense.
+Simply type the snippet without dashes to activate IntelliSense.
 
 ## License
 
