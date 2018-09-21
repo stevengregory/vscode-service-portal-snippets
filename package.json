@@ -2,7 +2,7 @@
   "name": "service-portal-snippets",
   "displayName": "Service Portal Snippets",
   "description": "A collection of ServiceNow Service Portal snippets",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "stevengregory",
   "icon": "images/icon.png",
   "license": "MIT",
