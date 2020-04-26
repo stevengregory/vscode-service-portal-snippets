@@ -91,7 +91,7 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 
 | Snippet             | Purpose                  |
 | ------------------- | ------------------------ |
-| `sp-script-include` | Creates a Script Include |
+| `sp-script-include` | Creates a script include |
 
 ## Installation
 
