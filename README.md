@@ -87,6 +87,12 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | `sp-ng-module`    | Creates an AngularJS module    |
 | `sp-ng-service`   | Creates an AngularJS service   |
 
+### Script Includes
+
+| Snippet             | Purpose                  |
+| ------------------- | ------------------------ |
+| `sp-script-include` | Creates a Script Include |
+
 ## Installation
 
 ```
