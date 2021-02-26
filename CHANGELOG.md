@@ -5,6 +5,7 @@
 ## 1.0.4 (2021-02-25)
 
 - README update
+- Package update
 
 <a name="1.0.3"></a>
 
