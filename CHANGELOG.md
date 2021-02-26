@@ -1,5 +1,11 @@
 # Service Portal Snippets Changelog
 
+<a name="1.0.4"></a>
+
+## 1.0.4 (2021-02-25)
+
+- README update
+
 <a name="1.0.3"></a>
 
 ## 1.0.3 (2020-04-26)
