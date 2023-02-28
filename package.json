@@ -39,8 +39,8 @@
     "publish": "vsce publish"
   },
   "devDependencies": {
-    "@types/node": "^13.13.2",
-    "@types/vscode": "^1.44.0",
-    "typescript": "^3.8.3"
+    "@types/node": "^13.13.52",
+    "@types/vscode": "^1.75.1",
+    "typescript": "^3.9.10"
   }
 }
