@@ -1,6 +1,6 @@
 # Service Portal Snippets for VS Code
 
-This extension for Visual Studio Code adds a handy collection of ServiceNow [Service Portal](https://docs.servicenow.com/bundle/quebec-servicenow-platform/page/build/service-portal/concept/c_ServicePortal.html) snippets. The snippets adhere to best practice by following the [Service Portal: Style Guide](https://github.com/stevengregory/service-portal-style-guide).
+This extension for Visual Studio Code adds a handy collection of ServiceNow [Service Portal](https://www.servicenow.com/products/service-portal.html) snippets. The snippets adhere to best practice by following the [Service Portal: Style Guide](https://github.com/stevengregory/service-portal-style-guide).
 
 ![Use Extension](images/use-extension.gif)
 
