@@ -1,5 +1,12 @@
 # Service Portal Snippets Changelog
 
+<a name="1.0.5"></a>
+
+## 1.0.5 (2023-02-28)
+
+- README update
+- Package update
+
 <a name="1.0.4"></a>
 
 ## 1.0.4 (2021-02-25)
