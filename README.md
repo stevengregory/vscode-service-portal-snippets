@@ -93,15 +93,6 @@ To generate a snippet, simply type part of the snippet and press `enter`.
 | ------------------- | ------------------------ |
 | `sp-script-include` | Creates a script include |
 
-## Installation
-
-```
-Mac:      Select ⌘+P and then type: ext install service-portal-snippets
-Windows:  Select Ctrl+P and then type: ext install service-portal-snippets
-```
-
-Alternatively, simply bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of VS Code; then browse for Service Portal Snippets and hit the install button.
-
 ## Pro Tip
 
 Simply type the snippet without dashes to activate IntelliSense.
